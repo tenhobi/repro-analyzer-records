@@ -31,8 +31,9 @@ class AbcGenerator extends GeneratorForAnnotation<Abc> {
 type.getDisplayString: ${value.type?.getDisplayString(withNullability: true) ?? '--1'}
 type.isDartCoreList: ${value.type?.isDartCoreList ?? '--2'}
 type.isDartCoreRecord: ${value.type?.isDartCoreRecord ?? '--3'}
-type.element.library: ${value.type?.element?.library ?? '--4'}
-type.element.library.isDartCore: ${value.type?.element?.library?.isDartCore ?? '--5'}
+type.element.name: ${value.type?.element?.name ?? '--4'}
+type.element.library: ${value.type?.element?.library ?? '--5'}
+type.element.library.isDartCore: ${value.type?.element?.library?.isDartCore ?? '--6'}
 ''');
 
     return '';
